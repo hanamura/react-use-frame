@@ -1,2 +1,2 @@
-import o,{useState as t,useEffect as e}from"react";var n="XAesA";const c=({children:c,type:l})=>{console.log(l);const[u,r]=t(0);return e((()=>{console.log("Button count updated",u)}),[u]),e((()=>(console.log("Button mounted"),()=>{console.log("Button unmounted")})),[]),o.createElement("button",{className:n,onClick:()=>r(u+1)},c," ",u)};export{c as Button};
+import{useEffect as e}from"react";const r=r=>{e((()=>{if(!r)return;let e;const t=n=>{r(n),e=requestAnimationFrame(t)};return e=requestAnimationFrame(t),()=>cancelAnimationFrame(e)}),[r])};export{r as useFrame};
 //# sourceMappingURL=index.js.map
